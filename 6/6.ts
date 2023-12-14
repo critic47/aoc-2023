@@ -23,7 +23,6 @@ console.log(results.reduce((acc, cur) => acc * cur, 1))
 
 // part 2
 const [time, distance] = [timeArray.join(''), distanceArray.join('')].map((n) => parseInt(n))
-console.log(time, distance)
 let res = 0
 for (let speed = 0; speed <= time; speed++) {
   const distanceTravelled = (time - speed) * speed
