@@ -46,7 +46,6 @@ if (startAdjacents.up.value === '|' || startAdjacents.up.value === '7' || startA
   loop.push(startAdjacents.right)
 }
 
-let index = 0
 const step = () => {
   const currentPoint = loop.at(-1) as Point
   const previousPoint = loop.at(-2) as Point
