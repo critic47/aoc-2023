@@ -98,7 +98,7 @@ const vertices: Point[] = loop.filter((p) => {
   const value = grid[p.y]?.[p.x]
   return ['F', '7', 'L', 'J'].includes(value)
 })
-// add start if is a veritix
+// add start if is a vertex
 if (loop.at(-1)?.x !== loop.at(1)?.x || loop.at(-1)?.y !== loop.at(1)?.y) {
   vertices.unshift(loop.at(0) as Point)
 }
